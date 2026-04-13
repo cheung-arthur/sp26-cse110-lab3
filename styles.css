@@ -1,0 +1,20 @@
+:root {
+    --primary-color: #5a2d82;
+    --accent-color: rgb(218, 165, 32);
+    --text-color: hsl(0, 0%, 15%);
+    --bg-light: rgba(245, 245, 245, 0.95);
+
+    /* Wider-gamut colors*/
+    --brand-purple: color(display-p3 0.35 0.15 0.5);
+    --header-gradient-mix: color-mix(in srgb, #5a2d82 60%, goldenrod 40%);
+}
+
+body{
+    background-color: var(--bg-light, whitesmoke);
+    color: var(--text-color, black)
+}
+
+header {
+    background-color: var(--primary-color, purple);
+    color: orange;
+}
