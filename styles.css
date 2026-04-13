@@ -27,6 +27,9 @@ header {
 
 h1 {
     font-size: rem;
+    color: var(--accent-color, goldenrod);
+    text-align: center;
+    text-decoration: underline;
 }
 
 nav{
@@ -35,12 +38,25 @@ nav{
 
 }
 
+nav a{
+    color: var(--accent-color, goldenrod);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+nav li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
 footer {
     padding-top: 1cm;
     border-top-width: 2pt;
     min-height: 10mm;
 }
-
+hr{
+    display: none;
+}
 section{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -50,8 +66,12 @@ section{
     border-color: var(--primary-color, purple);
     border-width: 2px;
     border-radius: 8px;
+    display: block;
 }
 
+#media{
+    display:inline;
+}
 h2{
     margin: 10px 0 5px 0;
 }
@@ -71,4 +91,15 @@ main{
 #attendance{
     padding: 10px 20px;
 
+}
+img{
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    min-width: 200px
+}
+
+audio, video{
+    width: 100%;
+    max-width: 900px;
 }
