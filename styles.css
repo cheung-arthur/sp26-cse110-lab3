@@ -15,6 +15,12 @@ body{
     font-size: 16px;
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2 h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
 }
 
 header {
@@ -158,8 +164,8 @@ button:active{
 
 #agenda ol{
     display: grid;
-    grid-template-columns: repeat(2, 1fr)
-    grid-template-rows: autp;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
     gap: 50px;
     padding: 0;
 
@@ -173,3 +179,64 @@ button:active{
     
 }
 
+@media (max-width: 800px){
+    nav li{
+        display: block;
+        margin-bottom: 6px;
+    }
+
+    #agenda ol{
+        grid-template-columns: 1fr;
+    }
+
+    #attendance ul{
+        flex-direction: column;
+    }
+}
+
+*{
+    box-sizing: border-box;
+}
+
+input[type="text"], input[type="email"], textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid var(--primary-color, purple);
+    border-radius: 4px;
+}
+
+nav > ul > li{
+    border-bottom: none;
+}
+
+h3 ~ p{
+    color: var(--text-color), #333;
+    font-style: italic;
+}
+
+h2 + p {
+    margin-top: 0;
+    font-size: 1.1em;
+}
+
+li.important{
+    background-color: var(--accent-color, goldenrod);
+    color: white;
+    font-weight: bold;
+}
+
+section:has(h3){
+    border-left: 4px solid var(--accent-color);
+}
+
+#misc{
+    background-color: var(--brand-purple, purple);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    & p{
+        font-size: 0.5em;
+    }
+}
