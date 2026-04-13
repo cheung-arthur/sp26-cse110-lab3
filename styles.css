@@ -135,3 +135,41 @@ button:active{
     color: white;
     transform: scale(0.97);
 }
+
+#attendance ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+}
+
+#attendance ul li{
+    background-color: var(--primary-color, purple);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    flex-basis : calc(33.333% - 20px);
+    flex-grow: 1;
+}
+
+#agenda ol{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: autp;
+    gap: 50px;
+    padding: 0;
+
+}
+
+#agenda ol li{
+    background-color: var(--primary-color, purple);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
