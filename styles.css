@@ -22,6 +22,7 @@ header {
     color: orange;
     padding: 2em;
     width: 100%;
+    position: relative;
 
 }
 
@@ -35,7 +36,23 @@ h1 {
 nav{
     width: 90vw;
     margin: 0 auto;
+    position: sticky;
+    top: 0;
+    background-color: #5a2d82;
+    z-index: 100;
+    padding: 10px;
 
+}
+
+.meeting-badge {
+    background-color: var(--accent-color, goldenrod);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 nav a{
@@ -43,6 +60,15 @@ nav a{
     text-decoration: none;
     font-weight: bold;
     margin: 0 15px;
+}
+
+nav a:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+section:hover{
+    border-color: var(--accent-color, goldenrod);
 }
 nav li{
     display: inline-block;
@@ -102,4 +128,10 @@ img{
 audio, video{
     width: 100%;
     max-width: 900px;
+}
+
+button:active{
+    background-color: var(--accent-color, goldenrod);
+    color: white;
+    transform: scale(0.97);
 }
