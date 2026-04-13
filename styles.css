@@ -11,10 +11,32 @@
 
 body{
     background-color: var(--bg-light, whitesmoke);
-    color: var(--text-color, black)
+    color: var(--text-color, black);
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background-color: var(--primary-color, purple);
     color: orange;
+    padding: 2em;
+    width: 100%;
+
+}
+
+h1 {
+    font-size: rem;
+}
+
+nav{
+    width: 90vw;
+    margin: 0 auto;
+
+}
+
+footer {
+    padding-top: 1cm;
+    border-top-width: 2pt;
+    min-height: 10mm;
 }
